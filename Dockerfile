@@ -5,12 +5,10 @@ ENV DOCKER_CHANNEL=stable \
     DOCKER_COMPOSE_VERSION=1.24.1 \
     DEBIAN_FRONTEND=noninteractive
 
-# Install Docker, Docker Compose, Docker Squash
 RUN apt-get update && \
     apt-get -y install \
         bash \
         curl \
-     #   device-mapper \
         python-pip \
         python-dev \
         iptables \
