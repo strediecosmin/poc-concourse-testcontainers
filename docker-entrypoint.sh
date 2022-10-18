@@ -164,7 +164,7 @@ start_docker
 trap stop_docker EXIT
 await_docker
 
-do not exec, because exec disables traps
+# do not exec, because exec disables traps
 if [[ "$#" != "0" ]]; then
   "$@"
 else
