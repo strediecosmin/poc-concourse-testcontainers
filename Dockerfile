@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 
 ENV DOCKER_CHANNEL=stable \
     DOCKER_VERSION=20.10.18 \
-    DOCKER_COMPOSE_VERSION=1.29.2 \
+    DOCKER_COMPOSE_VERSION=1.24.1 \
     DEBIAN_FRONTEND=noninteractive
 
 # Install Docker, Docker Compose, Docker Squash
