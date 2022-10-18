@@ -33,5 +33,6 @@ RUN apt-get update && \
     rm -rf /root/.cache
 
 WORKDIR /shared
-COPY docker-entrypoint.sh /bin/entrypoint.sh
-ENTRYPOINT ["/bin/entrypoint.sh"]
+COPY docker-entrypoint.sh entrypoint.sh
+RUN chmod +x entrypoint.sh
+ENTRYPOINT ["/shared/entrypoint.sh"]
