@@ -34,4 +34,4 @@ RUN apt-get update && \
 
 WORKDIR /shared
 COPY docker-entrypoint.sh /bin/entrypoint.sh
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/bin/entrypoint.sh"]
