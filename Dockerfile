@@ -34,3 +34,5 @@ WORKDIR /shared
 COPY docker-entrypoint.sh entrypoint.sh
 RUN chmod +x entrypoint.sh
 ENTRYPOINT ["/shared/entrypoint.sh"]
+
+
