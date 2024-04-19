@@ -28,3 +28,6 @@ jobs:
 
       - name: test
         run: echo "success"
+      - name: another
+        run: echo "another test"
+
