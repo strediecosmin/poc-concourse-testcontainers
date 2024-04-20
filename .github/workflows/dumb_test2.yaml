@@ -4,9 +4,6 @@ on:
   pull_request_target:
     branches:
       - main
-    paths:
-      - test-code/**
-      
 
 jobs:
   docker:
@@ -28,4 +25,4 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: test
-        run: echo "success"
+        run: echo "from dumb test 2"
